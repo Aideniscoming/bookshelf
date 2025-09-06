@@ -5,7 +5,7 @@ import { SearchProvider } from './SearchContext';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/bookshelf">
       <SearchProvider>
         <Routes>
           <Route path="/" element={<BookContainer />} />
