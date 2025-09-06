@@ -1,0 +1,68 @@
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.title {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+.author {
+    font-size: 0.5em;
+    color: gray;
+}
+.image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    /* margin-right: 20px;
+    margin-top: 20px; */
+}
+.noImage {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border: black 1px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.description {
+    font-size: 0.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* show max 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.publish {
+    font-size: 0.5em;
+    color: darkgray;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    
+}
