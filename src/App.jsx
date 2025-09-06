@@ -1,16 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-import BookContainer from "./Component/BookContainer";
-import BookPage from "./Component/BookPage";
-import { SearchProvider } from "./SearchContext";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import BookContainer from './Component/BookContainer';
+import BookPage from './Component/BookPage';
+import { SearchProvider } from './SearchContext';
+
 function App() {
   return (
-    <SearchProvider>
-      <Routes>
-        <Route path="/" element={<BookContainer />} />
-        <Route path="/book/:id" element={<BookPage />} />
-      </Routes>
-    </SearchProvider>
-    
+    <Router>
+      <SearchProvider>
+        <Routes>
+          <Route path="/" element={<BookContainer />} />
+          <Route path="/book/:id" element={<BookPage />} />
+        </Routes>
+      </SearchProvider>
+    </Router>
   );
 }
 
